@@ -1,0 +1,48 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <g fill="#FFF000" transform="matrix(1, 0, 0, 1, 0, -2)">
+    <circle r="66" cx="856" cy="219"></circle>
+    <circle r="13" cx="616" cy="322"></circle>
+    <circle r="17" cx="406" cy="300"></circle>
+    <circle r="46" cx="235" cy="182"></circle>
+    <circle r="42" cx="480" cy="546"></circle>
+    <circle r="36" cx="38" cy="471"></circle>
+    <circle r="61" cx="67" cy="301"></circle>
+    <circle r="15" cx="623" cy="478"></circle>
+    <circle r="32" cx="304" cy="50"></circle>
+    <circle r="41" cx="245" cy="531"></circle>
+    <circle r="20" cx="67" cy="49"></circle>
+    <circle r="57" cx="736" cy="6"></circle>
+    <circle r="59" cx="820" cy="435"></circle>
+    <circle r="47" cx="609" cy="170"></circle>
+    <circle r="35" cx="266" cy="354"></circle>
+    <circle r="34" cx="702" cy="584"></circle>
+    <circle r="41" cx="485" cy="9"></circle>
+    <circle r="14" cx="425" cy="127"></circle>
+    <circle r="14" cx="840" cy="569"></circle>
+    <circle r="51" cx="869" cy="65"></circle>
+    <circle r="52" cx="378" cy="457"></circle>
+    <circle r="38" cx="509" cy="404"></circle>
+    <circle r="28" cx="13" cy="176"></circle>
+    <circle r="63" cx="98" cy="595"></circle>
+    <circle r="45" cx="746" cy="304"></circle>
+    <circle r="13" cx="1562.5" cy="80.196" style="stroke-width: 1;"></circle>
+    <circle r="17" cx="1352.5" cy="58.196" style="stroke-width: 1;"></circle>
+    <circle r="46" cx="1181.5" cy="-59.804" style="stroke-width: 1;"></circle>
+    <circle r="42" cx="1426.5" cy="304.196" style="stroke-width: 1;"></circle>
+    <circle r="36" cx="984.504" cy="229.196" style="stroke-width: 1;"></circle>
+    <circle r="61" cx="1013.5" cy="59.196" style="stroke-width: 1;"></circle>
+    <circle r="15" cx="1569.5" cy="236.196" style="stroke-width: 1;"></circle>
+    <circle r="32" cx="1250.5" cy="-191.8" style="stroke-width: 1;"></circle>
+    <circle r="41" cx="1191.5" cy="289.196" style="stroke-width: 1;"></circle>
+    <circle r="20" cx="1013.5" cy="-192.8" style="stroke-width: 1;"></circle>
+    <circle r="47" cx="1555.5" cy="-71.804" style="stroke-width: 1;"></circle>
+    <circle r="35" cx="1212.5" cy="112.196" style="stroke-width: 1;"></circle>
+    <circle r="41" cx="1431.5" cy="-232.8" style="stroke-width: 1;"></circle>
+    <circle r="14" cx="1371.5" cy="-114.8" style="stroke-width: 1;"></circle>
+    <circle r="52" cx="1324.5" cy="215.196" style="stroke-width: 1;"></circle>
+    <circle r="38" cx="1455.5" cy="162.196" style="stroke-width: 1;"></circle>
+    <circle r="28" cx="959.504" cy="-65.804" style="stroke-width: 1;"></circle>
+    <animateMotion path="M -1475.972 704.593 L 904.772 -517.592" calcMode="spline" begin="0s" dur="24s" fill="freeze" keyTimes="0; 1" keyPoints="0; 1" keySplines="0.42 0 0.58 1"></animateMotion>
+  </g>
+  <animate attributeName="x" values="0;0" begin="0s" dur="3s" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.42 0 0.58 1"></animate>
+</svg>

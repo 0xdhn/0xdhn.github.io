@@ -1,47 +1,239 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primary: #3b82f6;
-  --bg: #0f172a;
-  --text: #f8fafc;
-  --muted: #94a3b8;
-  --danggerous: #FF383C;
+    --primary: rgb(0, 136, 255);
+    --secondary: rgb(0, 192, 232);
+    --info: rgb(0, 195, 208);
+    --mint: rgb(0, 200, 179);
+    --success: rgb(52, 199, 89);
+    --warning: rgb(255, 204, 0);
+    --danggerous: rgb(255, 56, 60);
+    --orange: rgb(255, 141, 40);
+    --indigo: rgb(97, 85, 245);
+    --purple: rgb(203, 48, 224);
+    --pink: rgb(255, 45, 85);
+    --brown: rgb(172, 127, 94);
+    --text-primary: rgb(0, 0, 0);
+    --text-secondary: rgb(245,245,247);
+    --body-bg-1: rgb(23, 23, 30);
+    --body-bg-2: rgb(44, 44, 46);
+    --body-bg-3: rgb(58, 58, 60);
+    --body-bg-4: rgb(72, 72, 74);
+    --body-bg-5: rgb(99, 99, 102);
+    --body-bg-6: rgb(142, 142, 147);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary:rgb(0, 145, 255);
+        --secondary: rgb(60, 211, 254);
+        --info: rgb(0, 210, 224);
+        --mint: rgb(0, 218, 195);
+        --success: rgb(48, 209, 88);
+        --warning: rgb(255, 214, 0);
+        --danggerous: rgb(255, 66, 69);
+        --orange: rgb(255, 146, 48);
+        --indigo:rgb(109, 124, 255);
+        --purple:rgb(219, 52, 242);
+        --pink:rgb(255, 55, 95);
+        --brown:rgb(183, 138, 102);
+        --text-primary:  rgb(245,245,247);
+        --text-secondary: rgb(0, 0, 0);
+        --body-bg-1: rgb(242, 242, 247);
+        --body-bg-2: rgb(229, 229, 234);
+        --body-bg-3: rgb(174, 174, 178);
+        --body-bg-4: rgb(199, 199, 204);
+        --body-bg-5: rgb(209, 209, 214);
+        --body-bg-6: rgb(142, 142, 147);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-family: "Raleway", sans-serif;
 }
 
 .hero{
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--text-primary);
     margin: 0 auto;
-    padding: 0 24px;
-
+    padding: 32px 24px;
 }
-.hero h1.text-extra-bold{
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--text);
+
+.hero .card-hero h1{
+    margin: 0;
+    padding: 96px 96px 0px 96px;
+    font-size: 120px;
+}
+
+.hero .card-hero .description{
+    font-size: 20px;
+    margin: 0 96px;
+}
+
+.hero .button{
+    background-color: var(--text-primary);
+    color: var(--primary);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 96px;
+    cursor: pointer;
 }
 
 .hero img{
-    -webkit-transform: scaleX(-1);
--moz-transform: scaleX(-1);
--o-transform: scaleX(-1);
-transform: scaleX(-1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
 
-footer {
-    background-color: var(--bg);
-    color: var(--muted);
+.contact{
+    background-color: var(--body-bg-1);
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact .form-contact{
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* biar responsive */
+}
+
+.contact .form-card{
+    padding: 24px;
+    margin: 8px;
+    flex: 1;
+}
+
+label{
+    display: block;
+}
+
+.contact .form-card input{
+  width: 100%;
+  padding: 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--body-bg-6);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contact .form-card textarea{
+  width: 100%;
+  height: 160px;
+  padding: 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--body-bg-6);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contact .form-card button{
+    background-color: var(--primary);
+    color: var(--text-primary);
+    border: 1px solid var(--primary);
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px 32px;
     text-align: center;
-    padding: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact .form-card button:hover{
+    background-color: var(--text-primary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+}
+
+.line {
+  width: 2px;
+  height: 100px;
+  background: black;
+  margin: auto;
+}
+
+.footer-text{
+    background-color: var(--primary);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 56px;
+    font-size: 14px;
+}
+
+.footer-text i{
+    font-size: 16px;
+    color: var(--text-primary);
+    padding: 8px;
+    text-decoration: none;
+}
+
+.wave-container{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow:hidden;
+    line-height:0;
+}
+
+.wave{
+    width:200%;
+    display:block;
+    animation:waveMove 24s linear infinite;
+    transform: translateZ(0);
+}
+
+@keyframes waveMove{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+.typewriter{
+ overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
